@@ -1,0 +1,62 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+package-lock.json
+dashboard-web/package-lock.json
+core/package-lock.json
+**/package-lock.json
+
+# Optional npm cache directory
+.npm
+.npmrc
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables file
+# .env.local represents setup for
+# local (i.e. on laptop) development
+# since it contains sensitive info
+# (i.e. domain password for proxy settings)
+# it must be not commited. Other than that
+# it should contain same values as .env.development
+# which represents configuration for czcholstc000698
+.env.local
+
+# local config json file
+config/**
+config-local
+!config/platform-config-dev.template.json
+platform-config-mine.json
+*/platform-config-mine.json
+
+.vscode/launch.json
+
+core/public/mongodb/bin/mongod
+test/mongodb/.mongodb-binaries/**
+!test/mongodb/.mongodb-binaries/3.6.4/README.md
+
+nohup.out
+dist
